@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: DBTDEMO
+  - name: benedict_test
     tables:
       - name: ITEM
       - name: LINE_ITEM
