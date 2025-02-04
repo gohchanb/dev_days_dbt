@@ -10,3 +10,7 @@ selectors:
     definition:
       method: fqn
       value: logins_by_user
+  - name: spend_per_user
+    definition:
+      method: fqn
+      value: spend_per_user
