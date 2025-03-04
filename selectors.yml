@@ -14,3 +14,7 @@ selectors:
     definition:
       method: fqn
       value: spend_per_user
+  - name: user_copy
+    definition:
+      method: fqn
+      value: user_copy

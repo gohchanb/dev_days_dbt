@@ -2,6 +2,7 @@
 version: 2
 
 models:
+  - name: user_copy
   - name: logins_by_user
   - name: spend_per_user
   - name: spend_by_login
