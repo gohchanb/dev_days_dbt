@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: PUBLIC
+    tables:
+      - name: ORDERS
+      - name: SALESFORCE_ACCOUNT
+      - name: TRADE_ANOMALY
+      - name: WATCHLIST
