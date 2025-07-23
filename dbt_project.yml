@@ -36,6 +36,7 @@ models:
     marts:
       +materialized: table
       +tags: all_models
-    # trade_anomaly:
-    #   +materialized: table
-    #   +tags: trade_anomaly
+    trade_anomaly:
+      +materialized: table
+      +tags: trade_anomaly
+      enabled: false
