@@ -1,2 +1,2 @@
 SELECT *
-FROM {{source('benedict_test', 'USER_INFO')}} u
+FROM {{source('DBTDEMO', 'USER_INFO')}} u

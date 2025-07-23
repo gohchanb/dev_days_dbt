@@ -1,6 +1,6 @@
 version: 2
 
 sources:
-  - name: benedict_test
+  - name: DBTDEMO
     tables:
       - name: WEB_EVENTS
