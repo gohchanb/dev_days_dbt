@@ -18,10 +18,6 @@ selectors:
     definition:
       method: fqn
       value: user_copy
-  - name: user_copy_snowflake
-    definition:
-      method: fqn
-      value: user_copy_snowflake
-  - name: trade_anomaly
-    definition:
-      tag: trade_anomaly
+  # - name: trade_anomaly
+  #   definition:
+  #     tag: trade_anomaly

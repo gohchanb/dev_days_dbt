@@ -1,2 +1,0 @@
-SELECT *
-FROM {{source('BENEDICT_DBT', 'USER_INFO')}} u
