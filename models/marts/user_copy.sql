@@ -1,2 +1,2 @@
 SELECT *
-FROM {{source('DBTDEMO', 'USER_INFO')}} uc
+FROM {{source('DBTDEMO', 'USER_INFO')}} ucdifferent
