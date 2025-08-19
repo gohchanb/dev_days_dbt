@@ -1,0 +1,178 @@
+version: 2
+sources:
+  - name: ARCHIE
+    database: etleap_dev
+    tables:
+      - name: my"t`able
+  - name: DBTDEMO
+    database: etleap_dev
+    tables:
+      - name: ITEM
+      - name: LINE_ITEM
+      - name: PURCHASE
+      - name: USER_INFO
+      - name: WEB_EVENTS
+  - name: ETLEAP_TEST
+    database: test_etleap
+    tables:
+      - name: 2023_YELLOW_TAXI_TRIP_DATA
+      - name: _BATESTETLEAP___CAR
+      - name: _BATESTETLEAP___PERSON
+      - name: _CHRISTIANDEMO___INVENTORY
+      - name: _CHRISTIANDEMO___ITEM
+      - name: _CHRISTIANDEMO___PERSON
+      - name: _WEB_EVENTS_AC
+      - name: _Web_Events_BBTV
+      - name: AG_BIT_PK
+      - name: AG_DEMO___INVENTORY
+      - name: AG_DEMO___ITEM
+      - name: AG_DEMO___PERSON
+      - name: AG_INVENTORY
+      - name: AG_MULTI_COL_PK_WITH_DATETIME
+      - name: ANNUAL_AVERAGE_DAILY_TRAFFIC__AADT
+      - name: bbtv_car
+      - name: bbtv_department
+      - name: bbtv_parameterized
+      - name: BL2_ETLEAP___CAR
+      - name: BL2_ETLEAP___DEPARTMENT
+      - name: BL2_ETLEAP___PERSON
+      - name: CA_CAR
+      - name: CB_INVENTORY
+      - name: CB_MULTI_COL_PK
+      - name: CB_MULTI_COL_PK_WITH_DATETIME
+      - name: cm_inventory
+      - name: cm_multi_col_pk
+      - name: CN3_DEMO___INVENTORY
+      - name: CN3_DEMO___ITEM
+      - name: CN3_DEMO___PERSON
+      - name: CO_DEMO___INVENTORY
+      - name: CO_DEMO___ITEM
+      - name: CO_DEMO___PERSON
+      - name: co_inventory
+      - name: co_multi_col_pk
+      - name: CRTEST_TEST_SCHEMA___BIT_PK
+      - name: CRTEST_TEST_SCHEMA___MULTI_COL_PK
+      - name: cs_department
+      - name: CUSTOMERS
+      - name: DisputeStatusHistory
+      - name: EMPLOYEES
+      - name: etleap_car
+      - name: etleap_department
+      - name: etleap_parameterized
+      - name: FOOBIMC_ALL_CUBES
+      - name: FOOBIMC_ALL_DIMENSIONS
+      - name: FOOBIMC_ALL_VARIABLE_MAPPINGS
+      - name: FOOBIMC_ALL_VARIABLE_VALUES
+      - name: glt_erpx_validation_um
+      - name: glt_replace_mode
+      - name: MARIADB_DMS_TEST
+      - name: MK_SFTP_TEST_2ND_FOLDER
+      - name: ne_inventory
+      - name: ne_multi_col_pk
+      - name: nu2_inventory
+      - name: ORDERS
+      - name: PO_ACCOUNT
+      - name: PO_CAMPAIGN
+      - name: PO_LEAD
+      - name: PR_TEST_SCHEMA___BIT_PK
+      - name: PR_TEST_SCHEMA___INVENTORY
+      - name: PR_TEST_SCHEMA___MULTI_COL_PK
+      - name: project_info_avro_renamed
+      - name: PUBLIC___CHAR_PK_PADDING_PROD
+      - name: restest_DEMO___INVENTORY
+      - name: restest_DEMO___PERSON
+      - name: SA_TEST_SCHEMA___BIT_PK
+      - name: SA_TEST_SCHEMA___INVENTORY
+      - name: SA_TEST_SCHEMA___MULTI_COL_PK
+      - name: SAPDEMO___INVENTORY
+      - name: SAPDEMO___ITEM
+      - name: SAPDEMO___PERSON
+      - name: SC_BIT_PK
+      - name: sc_inventory
+      - name: SC_INVENTORY
+      - name: sc_multi_col_pk
+      - name: SC_MULTI_COL_PK
+      - name: sc_multi_col_pk_negative
+      - name: sc_multi_col_pk_with_datetime
+      - name: SC_MULTI_COL_PK_WITH_DATETIME
+      - name: sc_multi_col_pk_with_guid
+      - name: sc_multi_col_pk_with_ts
+      - name: snowflake_rename
+      - name: test
+      - name: TEST_DEMO___INVENTORY
+      - name: TEST_DEMO___ITEM
+      - name: TEST_DEMO___PERSON
+      - name: TESTBIT_PK
+      - name: testINVENTORY
+      - name: TESTINVENTORY
+      - name: testMULTI_COL_PK
+      - name: TESTMULTI_COL_PK
+      - name: TESTMULTI_COL_PK_WITH_DATETIME
+      - name: testMULTI_COL_PK_WITH_TS
+      - name: veroCONTACTS
+      - name: veroCOUNTRIES
+      - name: veroCUSTOMERS
+      - name: veroEMPLOYEES
+      - name: veroINVENTORIES
+      - name: veroORDER_ITEMS
+      - name: veroORDERS
+      - name: VM_WEB_EVENTS
+      - name: warehouse_updater_confirmation
+      - name: WEB_EVENTS RG
+      - name: Web_Events VR
+      - name: Web_Events_AU
+      - name: WEB_EVENTS_BF_2
+      - name: WEB_EVENTS_CA4
+      - name: WEB_EVENTS_CCSW
+      - name: WEB_EVENTS_CF
+      - name: Web_Events_CO
+      - name: Web_Events_CS1
+      - name: WEB_EVENTS_CT
+      - name: Web_Events_ED
+      - name: Web_Events_EV
+      - name: WEB_EVENTS_GB
+      - name: Web_Events_GS
+      - name: Web_Events_LB
+      - name: WEB_EVENTS_NMH
+      - name: Web_Events_PD5
+      - name: Web_Events_PER
+      - name: Web_Events_PG
+      - name: WEB_EVENTS_PL
+      - name: WEB_EVENTS_RE
+      - name: WEB_EVENTS_RO
+      - name: WEB_EVENTS_RV
+      - name: Web_Events_SIG
+      - name: WEB_EVENTS_SIL
+      - name: Web_Events_SNOw
+      - name: Web_Events_TEST
+      - name: Web_Events_timo
+      - name: WEB_EVENTS_WH
+      - name: Web_Events_ZP
+      - name: xr_multi_col_pk_negative
+      - name: xr_multi_col_pk_with_guid
+  - name: LUQMAN
+    database: ETLEAP_DEV
+    tables:
+      - name: _LUQMAN_CSV_
+      - name: ETLEAP_PERSON
+      - name: LUQMAN_MONGO_TESTING
+  - name: PETER
+    database: ETLEAP_DEV
+    tables:
+      - name: DBO___FLOAT_PK_cdc
+      - name: DBO___FLOAT_PK_query
+      - name: LARGE_JSON_1_20MB_COLUMN_TXT
+      - name: LARGE_JSON_4_10MB_COLUMNS_TXT
+  - name: PUBLIC
+    database: test_etleap
+    tables:
+      - name: confirm_e2e_snow
+      - name: dATA_1___SHEET11
+      - name: ShS
+  - name: SHANNON
+    database: ETLEAP_DEV
+    tables:
+      - name: 'PUBLIC___MAX_LOB_TO_SNOWFLAKE '
+      - name: recreate_snowflake_lob_size_issue
+      - name: SHANNON_TEST___ORDERS
+      - name: snowflake_lob_fix
