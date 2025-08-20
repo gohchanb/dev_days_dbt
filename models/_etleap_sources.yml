@@ -138,6 +138,7 @@ sources:
       - name: Web_Events_PER
       - name: Web_Events_PG
       - name: WEB_EVENTS_PL
+      - name: WEB_EVENTS_PM
       - name: WEB_EVENTS_RE
       - name: WEB_EVENTS_RO
       - name: WEB_EVENTS_RV

@@ -1,7 +1,4 @@
 {{ config(
-    pre_hook=[
-        "ALTER ICEBERG TABLE PUBLIC.\"TRADE_ANOMALY_rCnLfXHS\" REFRESH"
-    ]
 ) }}
 
 select
