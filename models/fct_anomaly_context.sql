@@ -2,7 +2,7 @@ select
   symbol_order.account_id,
   symbol_order.symbol,
 open_exposure_usd,
-  watchlist_anomaly.account_name,
+
   watchlist_anomaly.anomaly_create_date,
   watchlist_anomaly.watch_reason,
   watchlist_anomaly.watchlist_date,
