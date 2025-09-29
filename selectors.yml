@@ -18,6 +18,10 @@ selectors:
     definition:
       method: fqn
       value: user_copy
-  # - name: trade_anomaly
-  #   definition:
-  #     tag: trade_anomaly
+  - name: trade_anomaly
+    definition:
+      tag: trade_anomaly
+  - name: int_symbol_order_5min
+    definition:
+      method: fqn
+      value: int_symbol_order_5min
