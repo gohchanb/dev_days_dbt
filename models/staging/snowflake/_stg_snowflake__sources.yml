@@ -3,4 +3,4 @@ version: 2
 sources:
   - name: BENEDICT_DBT
     tables:
-      - name: USER_INFO
+      - name: user_info_test3

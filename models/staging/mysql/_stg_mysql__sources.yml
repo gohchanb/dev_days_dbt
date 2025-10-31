@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: DBTDEMO
+  - name: benedict_test
     tables:
       - name: ITEM
       - name: LINE_ITEM
       - name: PURCHASE
-      - name: USER_INFO
+      - name: user_info_test3
