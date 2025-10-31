@@ -25,3 +25,4 @@ selectors:
     definition:
       method: fqn
       value: int_symbol_order_5min
+      
