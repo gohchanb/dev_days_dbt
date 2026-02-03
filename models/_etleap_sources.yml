@@ -1,3 +1,13 @@
 version: 2
-sources: [
-    ]
+sources:
+  - name: benedict_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: test2_azure_csv_txt
+      - name: test2_gcs_csv_txt
+      - name: test2_sftp_csv_txt
+      - name: test2_user_info
+      - name: test3_s3_csv_txt
