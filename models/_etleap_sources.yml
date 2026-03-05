@@ -1,3 +1,11 @@
 version: 2
-sources: [
-    ]
+sources:
+  - name: benedict_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: gsheets_null_header
+      - name: invalid_characters_local
+      - name: user_info_local
