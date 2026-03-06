@@ -1,3 +1,10 @@
 version: 2
-sources: [
-    ]
+sources:
+  - name: benedict_test
+    database: dev_etleap
+    quoting:
+        schema: true
+        identifier: true
+    tables:
+      - name: csv_txt_test2
+      - name: user_info_test2
