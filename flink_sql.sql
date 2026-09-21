@@ -19,7 +19,7 @@ CREATE TEMPORARY TABLE `public_user_info` (
   'scan.startup.mode' = 'latest-offset',
   'format' = 'json',
   'json.ignore-parse-errors' = 'true'
-)
+);
 
 CREATE TABLE IF NOT EXISTS `public_user_info_flink_sql` (
   `id` INT,
