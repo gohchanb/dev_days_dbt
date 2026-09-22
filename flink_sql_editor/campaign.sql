@@ -46,20 +46,26 @@ CREATE TEMPORARY TABLE `public_ad_clicks` (
 );
 
 CREATE TABLE IF NOT EXISTS `campaign_ctr` (
-  `window_start` TIMESTAMP_LTZ(3), `window_end` TIMESTAMP_LTZ(3),
-  `campaign_id` STRING, `impressions` BIGINT, `clicks` BIGINT, `ctr` DOUBLE
+  `window_start` TIMESTAMP(3),
+  `window_end` TIMESTAMP(3),
+  `campaign_id` STRING,
+  `impressions` BIGINT,
+  `clicks` BIGINT,
+  `ctr` DOUBLE
 );
 
 INSERT INTO `campaign_ctr`
 SELECT
-  TUMBLE_START(i.`event_time`, INTERVAL '1' MINUTE) AS window_start,
-  TUMBLE_END(i.`event_time`, INTERVAL '1' MINUTE)   AS window_end,
-  i.`campaign_id`,
-  COUNT(DISTINCT i.`impression_id`) AS impressions,
-  COUNT(c.`click_id`)               AS clicks,
-  CAST(COUNT(c.`click_id`) AS DOUBLE) / COUNT(DISTINCT i.`impression_id`) AS ctr
-FROM ad_impressions i
-LEFT JOIN ad_clicks c
-  ON i.`impression_id` = c.`impression_id`
- AND c.`event_time` BETWEEN i.`event_time` AND i.`event_time` + INTERVAL '1' MINUTE
-GROUP BY i.`campaign_id`, TUMBLE(i.`event_time`, INTERVAL '1' MINUTE);
+  TUMBLE_START(`event_time`, INTERVAL '1' MINUTE) AS `window_start`,
+  TUMBLE_END(`event_time`, INTERVAL '1' MINUTE)   AS `window_end`,
+  `campaign_id`,
+  COUNT(DISTINCT `impression_id`) FILTER (WHERE `kind` = 'impression') AS `impressions`,
+  COUNT(*)                        FILTER (WHERE `kind` = 'click')      AS `clicks`,
+  CAST(COUNT(*) FILTER (WHERE `kind` = 'click') AS DOUBLE)
+    / NULLIF(COUNT(DISTINCT `impression_id`) FILTER (WHERE `kind` = 'impression'), 0) AS `ctr`
+FROM (
+  SELECT `campaign_id`, `event_time`, `impression_id`, 'impression' AS `kind` FROM `public_ad_impressions`
+  UNION ALL
+  SELECT `campaign_id`, `event_time`, `impression_id`, 'click' AS `kind` FROM `public_ad_clicks`
+)
+GROUP BY `campaign_id`, TUMBLE(`event_time`, INTERVAL '1' MINUTE);
